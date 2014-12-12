@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>jsonp-demo</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bower_components/ng-prettyjson/dist/ng-prettyjson.min.css">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
+	<!-- <script src="bower_components/ng-prettyjson/src/ng-prettyjson.js "></script> -->
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div ng-controller="MainCtrl">
+		
+		<p ng-hide="isRepos">Loading ...</p>
+		<pre ng-show="isRepos" pretty-json="repos" />
+		
+	</div>
+</body>
+</html>
